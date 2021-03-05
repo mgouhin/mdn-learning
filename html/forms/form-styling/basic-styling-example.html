@@ -22,7 +22,27 @@
       list-style: none;
     }
 
-    form {}
+    label,
+    input,
+    button,
+    select {
+      font-family: inherit;
+      font-size: 100%;
+      box-sizing: border-box;
+      width: 175px;
+      margin: .2em .1em;
+    }
+
+    form {
+      display: grid;
+      grid-gap: .2em;
+      grid-template-columns: 1fr 2fr;
+      grid-template-rows: 2rem 1rem 1rem 1rem 1rem 1rem;
+    }
+
+    h2 {
+      grid-row: 1 / 2;
+    }
   </style>
 </head>
 
